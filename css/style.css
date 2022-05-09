@@ -1,6 +1,44 @@
 .body {
   font-family: "Arial";
 }
+.product,
+.household {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.product li:hover .hide-menu {
+  display: block;
+}
+.household li:hover .hide-menu {
+  display: block;
+}
+
+.hide-menu {
+  display: none;
+}
+.hide-menu {
+  border-radius: 3px;
+  background-color: #d2d4d5;
+}
+.product,
+.household {
+  padding: 15px;
+  background-color: #2a3644;
+  list-style: none;
+
+}
+.product a,
+.household a {
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Arial";
+  text-decoration: none;  
+}
+
 .table-result {
   margin: 0 auto;
   max-width: 960px;
@@ -71,38 +109,42 @@
 .line tr:nth-child(2n+1){
   background-color: #e8e8e8;
 }
-.table-name {
-  margin: 0 auto;
-  max-width: 960px;;
+
+.table-style {
+  width: 100%;
+  display: table;
+}
+.table-line {
+  padding: 10px 10px;
+  display: table-row;
 }
 
-.table {
-  display: flex;
-  justify-content: space-between;
+.table-line h3{
+  display: table-cell;
+}
+
+.table-line p{
+  display: table-cell;
 }
 
 .title {
   background-color: #2a3644;
-  padding: 0px 15px;
 }
 
-.title p {
+.title h3 {
+  padding: 12px 12px;
   font-size: 16px;
   color: #ffffff;
   font-weight: bold;
 }
 .info {
   background-color: #f2f2f2;
-  padding: 0px 15px;
-  border: 1px solid #c0c1c2;
 }
 
 .info p {
-  
+  padding: 12px 12px;
   font-size: 16px;
   color: #2a3644;
   border: 1px solid #c0c1c2;
 }
 
-.table-style {
-}
