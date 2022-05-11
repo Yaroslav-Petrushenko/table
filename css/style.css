@@ -2,10 +2,14 @@
   font-family: "Arial";
 }
 .product,
-.household {
+.household,
+.selo {
   display: flex;
   justify-content: space-between;
-
+  list-style: none;
+  padding-left: 0;
+  background-color: #2a3644;
+  border-radius: 3px;
 }
 
 .product li:hover .hide-menu {
@@ -14,31 +18,55 @@
 .household li:hover .hide-menu {
   display: block;
 }
+.selo li:hover .hide-menu{
+  display: block;
+}
 
-.hide-menu {
-  display: none;
-}
-.hide-menu {
-  border-radius: 3px;
-  background-color: #d2d4d5;
-}
-.product,
-.household {
-  padding: 15px;
-  background-color: #2a3644;
-  list-style: none;
 
-}
 .product a,
-.household a {
-  padding: 12px 30px;
+.household a,
+.selo a {
+  text-decoration: none;
   font-size: 16px;
   color: #ffffff;
   font-weight: bold;
   font-family: "Arial";
-  text-decoration: none;  
+  border-top: 0;
+  border-bottom: 0;
+  padding: 12.5px 30px;
+  display: block;
+
 }
 
+.product a:hover,
+.household a:hover,
+.selo a:hover {
+  color: #fd8612;
+  background-color: #2a3644;
+}
+
+
+.hide-menu {
+  width: 200px;
+  padding-left: 0;
+  margin-top: 0;
+  display: none;
+  position: absolute;
+  padding-top: 5px;
+  list-style: none;
+}
+
+.hide-menu a{
+  font-size: 15px;
+  color: #2a3644;
+  font-weight: bold;
+  font-family: "Arial";
+  text-decoration: none;
+  display: block;
+  border-top: 1px solid #b9bdc1;
+  padding: 13px 20px;
+  background-color: #d2d4d5;
+}
 .table-result {
   margin: 0 auto;
   max-width: 960px;
@@ -47,54 +75,85 @@
 .table-result table {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 3px;
+  overflow: hidden;
+}
+table td:nth-child(n + 2) {
+  border-left: 1px solid #c0c1c2;
+}
+tbody tr:nth-child(n + 2) {
+  border-top: 1px solid #c0c1c2;
 }
 
 .table-result h1,
 .table-name h1 {
+  margin: 25px 0;
   font-size: 24px;
   letter-spacing: 1px;
   color: #bfbfbf;
   font-weight: bold;
 }
 
-.table-row tr {
-  border-radius: 3px;
+.row tr,
+.row h3 {
   background-color: #2a3644;
 }
 
-.table-row th {
+.row th,
+.row h3 {
   font-size: 16px;
   color: #ffffff;
   font-weight: bold;
   padding: 15px;
- 
   border: 1px solid #3f4852;
 }
 
-.line tr {
+.line{
   background-color: #f2f2f2;;
   transition: all .25s ease;
 }
 
-.line td {
+.line td,
+.line p{
   font-size: 16px;
   color: #2a3644;
-  padding: 15px 15px;
+  padding: 13px 15px;
   border-left: 0;
   border-bottom: 0;
-  border-right: 0;
-  border: 1px solid #c0c1c2;
-  
+  border-right: 0; 
 }
 
-.line tr:hover {
+.row:nth-child(n + 2) {
+  border-left: 1px solid #c0c1c2;
+}
+.table-line p {
+  border-top: 1px solid #c0c1c2;
+}
+.table-line p:nth-child(n+2) {
+  border-left: 1px solid #c0c1c2;
+}
+
+.line tr:nth-child(2n+1):hover {
+  border-left: 0;
+  border-right: 0;
   background-color: #c0c1c2;
 }
-.table-row tr:first-child th:nth-child(2) {
-  text-align: left;
+tbody tr {
+  background-color: #e8e8e8;
+}
+tbody tr:hover {
+  border-left: 0;
+  border-right: 0;
+  background-color: #c0c1c2;
 }
 
-.table-row tr:first-child th:first-child {
+.row tr:first-child th:nth-child(2) {
+  width: 49.5%;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.row tr:first-child th:first-child {
   width: 43px;
 }
 
@@ -107,12 +166,16 @@
 }
 
 .line tr:nth-child(2n+1){
+  background-color: #f2f2f2;
+}
+.table-line:nth-child(2n+1){
   background-color: #e8e8e8;
 }
 
 .table-style {
   width: 100%;
   display: table;
+  margin-bottom: 60px;
 }
 .table-line {
   padding: 10px 10px;
@@ -127,24 +190,23 @@
   display: table-cell;
 }
 
-.title {
-  background-color: #2a3644;
+.table-line h3:first-child {
+  width: 43px;
+  text-align: center;
 }
 
-.title h3 {
-  padding: 12px 12px;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: bold;
+.table-line p:first-child {
+  text-align: center;
 }
-.info {
-  background-color: #f2f2f2;
+.table-line h3:nth-child(n+3) {
+  text-align: center;
 }
-
-.info p {
-  padding: 12px 12px;
-  font-size: 16px;
-  color: #2a3644;
-  border: 1px solid #c0c1c2;
+.table-line:hover {
+  background-color: #c0c1c2;
+  border-left: 0;
+  border-right: 0;
 }
 
+.table-line p:nth-child(n+3) {
+  text-align: right;
+}
