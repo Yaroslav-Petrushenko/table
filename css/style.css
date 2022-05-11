@@ -184,6 +184,9 @@ tbody tr:hover {
 .table-style {
   width: 100%;
   display: table;
+  border-collapse: collapse;
+  border-radius: 3px;
+  overflow: hidden;
   margin-bottom: 60px;
 }
 .table-line {
