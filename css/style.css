@@ -22,14 +22,13 @@ body {
   background-color: #2a3644;
   border-radius: 3px;
 }
-.household {
-  list-style: none;
-  background-color: #2a3644;
-  border-radius: 3px;
-}
+
 .tehnika {
   display: table;
   width: 100%;
+  list-style: none;
+  background-color: #2a3644;
+  border-radius: 3px;
 }
 .tehnika > .household {
   display: table-row;
@@ -37,6 +36,7 @@ body {
 .tehnika > .household > li {
   display: table-cell;
 }
+
 
 .selo {
   display: flex;
@@ -72,7 +72,7 @@ body {
 .household li {
   display: table-row;
 }
-.social li{
+.social {
   list-style: none;
 }
 .social a {
@@ -122,27 +122,21 @@ a.in:hover{
   font-weight: bold;
   font-family: "Arial";
   display: block;
-
 }
-
+.household li:hover > a,
+.selo li:hover > a,
+.product li:hover > a {
+  color: #fd8612;
+  background-color: #3f4852;
+}
 .product a:hover,
 .household a:hover,
 .selo a:hover {
   color: #fd8612;
 }
 
-.product li:hover > a {
-  color: #fd8612;
-  background-color: #3f4852;
-}
-.household li:hover > a {
-  color: #fd8612;
-  background-color: #3f4852;
-}
-.selo li:hover > a {
-  color: #fd8612;
-  background-color: #3f4852;
-}
+  
+
 .product > li > a {
   border-left: 1px solid #3f4751;
   border-right: 1px solid #3f4751;
