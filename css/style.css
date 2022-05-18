@@ -398,36 +398,23 @@ tbody tr:hover {
 .table-line p:nth-child(n+3) {
   text-align: right;
 }
-.sub-menu li {
-  width: 420px;
- 
-}
-.sub-menu li:first-child {
+
+.sub-menu {
+  width: 440px;
+  border-radius: 3px;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
-}
-.sub-menu li:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.sub-menu > li:first-child > a:first-child {
-  border-radius: 3px 0 0 0;
-  border-right: 1px solid #c0c1c2;
+.sub-menu a {
+  width: 179px;
+  border: 0;
+  border-bottom: 1px solid #b9bdc1;
+  border-right: 1px solid #b9bdc1;
+  border-top: 0;
+  padding: 13px 20px;
 }
-.sub-menu > li:first-child > a:nth-child(2) {
-  border-radius: 0 3px  0 0;
-  border-right: 1px solid #c0c1c2;
+.sub-menu a:nth-child(4) {
+  border-right: none;
 }
-.sub-menu > li:first-child > a:nth-child(2) {
-  border-radius: 0 3px 0 0;
-  border-right: 1px solid #c0c1c2;
-}
-.sub-menu > li:nth-child(2) > a:nth-child(1) {
-  border-right: 1px solid #c0c1c2;
-}
-.sub-menu > li:nth-child(2) > a:nth-child(2) {
-  border-right: 1px solid #c0c1c2;
-}  
-  
-
