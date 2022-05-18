@@ -50,16 +50,13 @@ body {
 .household a {
   padding: 13px 30px;
 }
-.product li:hover .hide-menu {
+.product li:hover > .hide-menu {
   display: block;
 }
-.household li:hover .hide-menu {
+.household li:hover > .hide-menu {
   display: block;
 }
-.selo > li > a {
-  padding: 13px 30px;
-}
-.selo li:hover .hide-menu {
+.selo li:hover > .hide-menu {
   display: block;
 }
 
@@ -67,6 +64,9 @@ body {
   display: flex;
   align-items: center;
   padding-left: 19.5%;
+}
+.selo > li > a {
+  padding: 13px 30px;
 }
 
 .household li {
@@ -210,21 +210,27 @@ a.in:hover{
   padding: 13px 20px;
   background-color: #d2d4d5;
 }
-.rew {
-  
-  
+.pr {
+  position: relative;
 }
+.hide-menu li:hover .hide-2 {
+  display: block;
+  left: 100%;
+  top:0%;
+}
+.hide-2 li:hover .hide-3 {
+  display: block;
+  right: 100%;
+  top:0;
+}
+
 .hide-2 {
-  position: absolute;
-  display: none;
-  left: 103%;
-  top: 49%;
+  padding-top: 1px;
+  padding-left: 5px;
 }
 .hide-3 {
-  position: absolute;
-  display: none;
-  left: -103%;
-  top: 73%;
+  padding-top: 1px;
+  padding-right: 5px;
 }
 
 ul {
@@ -233,7 +239,6 @@ ul {
 .milk {
   right: 0;
 }
-
 
 .hide-menu a:hover {
   background-color: #2a3644;
@@ -393,3 +398,36 @@ tbody tr:hover {
 .table-line p:nth-child(n+3) {
   text-align: right;
 }
+.sub-menu li {
+  width: 420px;
+ 
+}
+.sub-menu li:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-menu li:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-menu > li:first-child > a:first-child {
+  border-radius: 3px 0 0 0;
+  border-right: 1px solid #c0c1c2;
+}
+.sub-menu > li:first-child > a:nth-child(2) {
+  border-radius: 0 3px  0 0;
+  border-right: 1px solid #c0c1c2;
+}
+.sub-menu > li:first-child > a:nth-child(2) {
+  border-radius: 0 3px 0 0;
+  border-right: 1px solid #c0c1c2;
+}
+.sub-menu > li:nth-child(2) > a:nth-child(1) {
+  border-right: 1px solid #c0c1c2;
+}
+.sub-menu > li:nth-child(2) > a:nth-child(2) {
+  border-right: 1px solid #c0c1c2;
+}  
+  
+
